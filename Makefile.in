@@ -29,7 +29,7 @@ install :
 	rm -rf dist
 	python setup.py sdist
 	pip install --upgrade dist/pairadise-1.0.0.tar.gz
-	R CMD INSTALL src/pairadise-model/
+	R CMD INSTALL src/pairadise_model/
 
 ################################################################################
 ##			      DOCUMENTATION				 ##
@@ -60,3 +60,4 @@ clean :
 	rm -f `find . -name "*.pyc"`
 	rm -rf dist
 	rm -rf Docs
+	rm -rf src/pairadise.egg-info
